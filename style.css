@@ -1,0 +1,451 @@
+<style>
+
+/* top nav bar*/
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+
+.body{
+	margin: 0 auto;
+	width: 70%;
+}
+  body, html {
+    height: 100%;
+}
+
+div.parallax {
+    /* The image used */
+    background-image: url('positive-thinking-b.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+ 
+   h1 {
+      font-size: 100px;
+      font-weight: 500;
+      margin-bottom: 10px;
+  }
+  h2 {
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 20px;
+      line-height: 1.5em;
+      font-weight: 100;
+      margin-bottom: 30px;
+  }  
+  div.tagline {
+  	  color: purple;
+  } 
+  .jumbotron {
+      background-color: lightgreen;
+      color: black;
+      padding: 150px 385px;
+      font-family: Montserrat, sans-serif;
+  }
+  
+  div.container-fluid1 {
+      padding: 150px 150px;
+      background-color: lightblue;
+      color: black;
+  }
+  div.container-fluid2 {
+	padding: 200px 200px;
+	background-color: darkgrey;
+	color: black;
+}
+
+
+body, .carousel {
+  background: url('untitled.png') background-repeat;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-control.right, .carousel-control.left {
+      background-image: "untitled.png";
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+
+  .button1 {
+  border-radius: 50px;
+  background-color: #1b5e20;
+  color: white;
+  border: none;
+  position: absolute;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 100px;
+  opacity: 1.0;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+  /*box-shadow: 0 5px yellow;*/
+}
+
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 0.5;
+  right: 0;
+}
+.button1:hover {background-color: #43a047;
+	color: white;
+}
+
+.slide {
+    opacity: 0.5;
+}
+
+
+.button2 {
+    position: relative;
+    border-radius: 8px;
+    border: none;
+    background-color: #009688;
+    border: none;
+    font-size: 40px;
+    color: blue;
+    margin: 36px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    /*box-shadow: 0 5px white;*/
+}
+
+.button2:after {
+    content: "";
+    background: white;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 1.0s
+}
+
+.button2:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1.0;
+    transition: 0s
+}
+
+.carousel-indicators {
+  bottom:-200px;
+}
+
+.carousel-inner {
+   margin-bottom:50px;
+}
+
+.carousel-control {
+  top:50%;
+  width:auto;
+  height:1em;
+  background:transparent;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right  {
+  position:static;
+  display:block;
+  width:auto;
+}
+.carousel-control .glyphicon-chevron-left:before {
+  margin-left:0;
+}
+
+
+footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+
+.slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+
+.button3 {
+  padding: 5px 15px;
+  font-size: 15px;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 5px yellow;
+}
+
+.button3:hover {background-color: limegreen;
+	color: black;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.button3:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px yellow;
+  transform: translateY(4px);
+}
+
+
+.details {
+	position: absolute;
+	}
+
+div.container-fluid4 {
+      padding: 150px 150px;
+      background-color: darkred;
+      color: white;
+  }
+
+
+	.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+
+    /* meet up page*/
+    html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+    /* Five columns side by side */
+.column {
+    float: left;
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+/*@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}*/
+
+/* Add some shadows to create a card effect */
+.circle {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button1 {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+/* meet up*/
+
+
+
+/*scroll top up button*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+/* scroll top up button*/
+</style>
