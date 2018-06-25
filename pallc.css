@@ -1,0 +1,48 @@
+.container{
+	width: 100%;
+	background-color: white;
+}
+
+.container-fluid{
+	background-color: white;
+}
+
+.container1{
+	background-color: #81D4FA;
+	width: 500px;
+	height: 500px;
+	color: black;
+	padding-top: 100px;
+}
+
+.container2{
+	background-color: #03A9F4;
+	height:300px;
+	width: 900px;
+	margin-left: 300px;
+	color: white;
+	padding-top: 100px;
+}
+
+/* Make the image fully responsive */
+  .carousel-inner{
+      width: 1490px;
+      height: 500px;
+      background-color: red;
+      color: white;
+  }
+
+  .container3{
+  	background-color: white;
+  	height: 700px;
+  }
+
+.container4{
+	background-color: teal;
+	height: 700px;
+}
+
+.container5{
+	background-color: white;
+	height: 700px;
+}
